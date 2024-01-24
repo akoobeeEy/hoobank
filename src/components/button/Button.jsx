@@ -1,9 +1,10 @@
 
 
-export const Button = ()=>{
+// eslint-disable-next-line react/prop-types
+export const Button = ({styles})=>{
     return(
-        <div>
-            Button
-        </div>
+        <button type="button" className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none ${styles} rounded-lg`}>
+            Get Started
+        </button>
     )
 }
